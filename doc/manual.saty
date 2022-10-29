@@ -1,0 +1,22 @@
+@require: stdjareport
+@require: itemize
+@require: annot
+
+@require: base/typeset/base
+@require: base/float
+
+% Document-local function definition
+let-inline \show-float f =
+  f
+  |> Float.to-string
+  |> embed-string
+in
+
+document (|
+  title = {font-haranoaji Manual};
+  author = {Your Name};
+|) '<
+  +p {
+    See `https://qiita.com/na4zagin3/items/b392f5d522f9bcc0493b` for the instruction in Japanese.
+  }
+>

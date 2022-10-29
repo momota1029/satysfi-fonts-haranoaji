@@ -1,0 +1,17 @@
+{
+  "HaranoAjiGothic-Bold":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-Bold.otf"}>,
+  "HaranoAjiGothic-ExtraLight":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-ExtraLight.otf"}>,
+  "HaranoAjiGothic-Heavy":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-Heavy.otf"}>,
+  "HaranoAjiGothic-Light":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-Light.otf"}>,
+  "HaranoAjiGothic-Medium":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-Medium.otf"}>,
+  "HaranoAjiGothic-Normal":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-Normal.otf"}>,
+  "HaranoAjiGothic-Regular":<"Single":{"src":"font-haranoaji/HaranoAjiGothic-Regular.otf"}>,
+
+  "HaranoAjiMincho-Bold":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-Bold.otf"}>,
+  "HaranoAjiMincho-ExtraLight":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-ExtraLight.otf"}>,
+  "HaranoAjiMincho-Heavy":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-Heavy.otf"}>,
+  "HaranoAjiMincho-Light":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-Light.otf"}>,
+  "HaranoAjiMincho-Medium":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-Medium.otf"}>,
+  "HaranoAjiMincho-Regular":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-Regular.otf"}>,
+  "HaranoAjiMincho-SemiBold":<"Single":{"src":"font-haranoaji/HaranoAjiMincho-SemiBold.otf"}>
+}
