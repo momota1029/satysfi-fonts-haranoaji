@@ -4,7 +4,7 @@
 ;; Library declaration
 (library
   ;; Library name
-  (name "font-haranoaji")
+  (name "fonts-haranoaji")
   ;; Library version
   (version "1.0.0")
   ;; Files
@@ -13,7 +13,7 @@
     (fontDir "fonts")
   ))
   ;; OPAM package file
-  (opam "satysfi-font-haranoaji.opam")
+  (opam "satysfi-fonts-haranoaji.opam")
   ;; Dependency
   (dependencies
     ((dist ()) ; Standard library
@@ -23,23 +23,27 @@
 ;; Library doc declaration
 (libraryDoc
   ;; Library doc name
-  (name "font-haranoaji-doc")
+  (name "fonts-haranoaji-doc")
   ;; Library version
   (version "1.0.0")
   ;; Working directory to build docs
   (workingDirectory "doc")
   ;; Build commands
-  (build
+  (build (
     ;; Run SATySFi
-    ((satysfi "manual.saty" "-o" "manual.pdf")))
+    (satysfi "./fonts-haranoaji-manual-en.saty")
+    (satysfi "./fonts-haranoaji-manual-ja.saty")
+  ))
   ;; Files
-  (sources
-    ((doc "manual.pdf" "doc/manual.pdf")))
+  (sources (
+    (doc "fonts-haranoaji-manual-en.pdf" "doc/fonts-haranoaji-manual-en.pdf")
+    (doc "fonts-haranoaji-manual-ja.pdf" "doc/fonts-haranoaji-manual-ja.pdf")
+  ))
   ;; OPAM package file
-  (opam "satysfi-font-haranoaji-doc.opam")
+  (opam "satysfi-fonts-haranoaji-doc.opam")
   ;; Dependency
   (dependencies
-    ((font-haranoaji ()) ; the main library
+    ((fonts-haranoaji ()) ; the main library
      (dist ()) ; Standard library
      (base ()) ; Base library
     )))

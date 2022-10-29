@@ -1,0 +1,21 @@
+@require: stdjareport
+
+let-inline ctx \set-font name it =
+  let ctx = ctx
+    |> set-font HanIdeographic (name, 0.88, 0.0)
+    |> set-font Kana (name, 0.88, 0.0)
+    |> set-font Latin (name, 1.0, 0.0) in
+  read-inline ctx it
+
+in
+document (|
+  title = {Font-haranoaji Manual};
+  author = {Conashimi Momota};
+|) '<
+  +p {
+    This library provides 原ノ味フォント / Harano Aji Fonts (https://github.com/trueroad/HaranoAjiFonts) by Masamichi Hosoda.
+  }
+  +p {
+    Gothic is set by \set-font(`HaranoAjiGothic-Bold`){HaranoAjiGothic-Bold}, \set-font(`HaranoAjiGothic-ExtraLight`){HaranoAjiGothic-ExtraLight}, \set-font(`HaranoAjiGothic-Heavy`){HaranoAjiGothic-Heavy}, \set-font(`HaranoAjiGothic-Light`){HaranoAjiGothic-Light}, \set-font(`HaranoAjiGothic-Medium`){HaranoAjiGothic-Medium}, \set-font(`HaranoAjiGothic-Normal`){HaranoAjiGothic-Normal}, \set-font(`HaranoAjiGothic-Regular`){HaranoAjiGothic-Regular}, Mincho by \set-font(`HaranoAjiMincho-Bold`){HaranoAjiMincho-Bold}, \set-font(`HaranoAjiMincho-ExtraLight`){HaranoAjiMincho-ExtraLight}, \set-font(`HaranoAjiMincho-Heavy`){HaranoAjiMincho-Heavy}, \set-font(`HaranoAjiMincho-Light`){HaranoAjiMincho-Light}, \set-font(`HaranoAjiMincho-Medium`){HaranoAjiMincho-Medium}, \set-font(`HaranoAjiMincho-Regular`){HaranoAjiMincho-Regular}, \set-font(`HaranoAjiMincho-SemiBold`){HaranoAjiMincho-SemiBold} respectively.
+  }
+>

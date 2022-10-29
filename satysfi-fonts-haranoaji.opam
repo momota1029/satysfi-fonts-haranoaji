@@ -1,0 +1,33 @@
+opam-version: "2.0"
+name: "satysfi-fonts-haranoaji"
+version: "1.0.0"
+synopsis: "SATySFi Font Package for Masamichi Hosoda's Harano Aji Fonts"
+description: """
+SATySFi Font Package for Masamichi Hosoda's Harano Aji Fonts
+"""
+maintainer: "Conashimi Momota momota.ry2@gmail.com"
+authors: "Conashimi Momota momota.ry2@gmail.com"
+license: "OFL-1.1"
+homepage: "https://github.com/momota1029/satysfi-fonts-haranoaji"
+dev-repo: "git+https://github.com/momota1029/satysfi-fonts-haranoaji.git"
+bug-reports: "https://github.com/momota1029/satysfi-fonts-haranoaji/issues"
+depends: [
+  "satysfi" { >= "0.0.6" & < "0.0.8" }
+  "satyrographos" { >= "0.0.2.6" & < "0.0.3" }
+
+  # If your library depends on other libraries, please write down here
+  "satysfi-dist"
+  "satysfi-base"
+]
+build: [
+  ["satyrographos" "opam" "build"
+   "--name" "fonts-haranoaji"
+   "--prefix" "%{prefix}%"
+   "--script" "%{build}%/Satyristes"]
+]
+install: [
+  ["satyrographos" "opam" "install"
+   "--name" "fonts-haranoaji"
+   "--prefix" "%{prefix}%"
+   "--script" "%{build}%/Satyristes"]
+]
